@@ -50,7 +50,7 @@ function Pokemon(props) {
                   return <p>{evo.name}</p>;
                 })}
             </p>
-            <div>{/*Put Popover here*/}<Popover /></div>
+            <div>{/*Put Popover here*/}</div>
           </div>
           {/*<Popover text={pokemon.weakness} />
           <Popover text={pokemon.type} /> */}

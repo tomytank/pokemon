@@ -1,6 +1,6 @@
 import React from "react";
 
-import data from "../data";
+import data from "./data";
 import "./styles.scss";
 
 import Pokemon from "./Pokemon";
