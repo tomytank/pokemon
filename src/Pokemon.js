@@ -37,6 +37,7 @@ function Pokemon(props) {
 //   console.log(props);
 //   const singlePoke = props;
 //   console.log(singlePoke.pokemon[1]);
+
   return (
     <>
       {props.pokemon.map(pokemon => (
@@ -46,14 +47,14 @@ function Pokemon(props) {
             {/*using 'magical' and operator*/}
             <h3>{pokemon.name}</h3>
             <p>
-              <p>Pokemon Evolutions: </p>
+              Evolutions: 
               {pokemon.next_evolution &&
                 pokemon.next_evolution.map(evo => {
-                  return <p>{evo.name}</p>;
+                  return <span>{evo.name} </span>;
                 })}
             </p>
             {/* <Button>Test</Button> */}
-            <PopoverButton  />
+            <PopoverButton id={pokemon.id} text={pokemon.name} popoverTitle= "Weaknesses"/>
             <div>{/*Put Popover here*/}</div>
           </div>
           {/*<Popover text={pokemon.weakness} />
