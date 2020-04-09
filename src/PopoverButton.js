@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function PopoverButton(props) {
 
-const PopoverButton = props => {
+// function PopoverButton(props) => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const toggle = () => setPopoverOpen(!popoverOpen);
@@ -28,7 +29,9 @@ const PopoverButton = props => {
     </div>
   );
 };
+// };
 export default PopoverButton;
+
 // import React, { useState } from "react";
 // import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
 
@@ -55,3 +58,4 @@ export default PopoverButton;
 // };
 
 // export default Popover;
+

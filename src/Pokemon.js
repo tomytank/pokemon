@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 import PropTypes from "prop-types";
 //import React, { useState } from "react";
-import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
 
-import PopoverButton from "./Popover";
+
+import PopoverButton from "./PopoverButton";
 
 function Pokemon(props) {
 //   const Example = props => {
@@ -53,7 +53,7 @@ function Pokemon(props) {
                 })}
             </p>
             {/* <Button>Test</Button> */}
-            <Popover  />
+            <PopoverButton  />
             <div>{/*Put Popover here*/}</div>
           </div>
           {/*<Popover text={pokemon.weakness} />
