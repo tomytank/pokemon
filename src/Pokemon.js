@@ -3,38 +3,40 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 //import React, { useState } from "react";
 import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
-//import Popover from "./Popover";
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import PopoverButton from "./Popover";
 
 function Pokemon(props) {
-  const Example = props => {
-    const [popoverOpen, setPopoverOpen] = useState(false);
+//   const Example = props => {
+//     const [popoverOpen, setPopoverOpen] = useState(false);
 
-    const toggle = () => setPopoverOpen(!popoverOpen);
+//     const toggle = () => setPopoverOpen(!popoverOpen);
 
-    return (
-      <div>
-        <Button id="Popover1" type="button">
-          Launch Popover
-        </Button>
-        <Popover
-          placement="bottom"
-          isOpen={popoverOpen}
-          target="Popover1"
-          toggle={toggle}
-        >
-          <PopoverHeader>Popover Title</PopoverHeader>
-          <PopoverBody>
-            Sed posuere consectetur est at lobortis. Aenean eu leo quam.
-            Pellentesque ornare sem lacinia quam venenatis vestibulum.
-          </PopoverBody>
-        </Popover>
-      </div>
-    );
-  };
+//     return (
+//       <div>
+//         <Button id="Popover1" type="button">
+//           Launch Popover
+//         </Button>
+//         <Popover
+//           placement="bottom" 
+//           isOpen={popoverOpen}
+//           target="Popover1"
+//           toggle={toggle}
+//         >
+//           <PopoverHeader>Popover Title</PopoverHeader>
+//           <PopoverBody>
+//             Sed posuere consectetur est at lobortis. Aenean eu leo quam.
+//             Pellentesque ornare sem lacinia quam venenatis vestibulum.
+//           </PopoverBody>
+//         </Popover>
+//       </div>
+//     );
+//   };
 
-  console.log(props);
-  const singlePoke = props;
-  console.log(singlePoke.pokemon[1]);
+//   console.log(props);
+//   const singlePoke = props;
+//   console.log(singlePoke.pokemon[1]);
   return (
     <>
       {props.pokemon.map(pokemon => (
@@ -50,6 +52,8 @@ function Pokemon(props) {
                   return <p>{evo.name}</p>;
                 })}
             </p>
+            {/* <Button>Test</Button> */}
+            <Popover  />
             <div>{/*Put Popover here*/}</div>
           </div>
           {/*<Popover text={pokemon.weakness} />

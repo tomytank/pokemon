@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
 
-const Example = props => {
+function PopoverButton(props) {
+
+const PopoverButton = props => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const toggle = () => setPopoverOpen(!popoverOpen);
@@ -26,7 +28,7 @@ const Example = props => {
     </div>
   );
 };
-export default Popover;
+export default PopoverButton;
 // import React, { useState } from "react";
 // import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
 
