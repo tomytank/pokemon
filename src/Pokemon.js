@@ -54,7 +54,11 @@ function Pokemon(props) {
                 })}
             </p>
             {/* <Button>Test</Button> */}
-            <PopoverButton id={pokemon.id} text={pokemon.name} popoverTitle= "Weaknesses"/>
+            <PopoverButton 
+            id={pokemon.id} 
+            text={pokemon.name} 
+            weaknesses={pokemon.weaknesses} 
+            popoverTitle= "Weaknesses"/>
             <div>{/*Put Popover here*/}</div>
           </div>
           {/*<Popover text={pokemon.weakness} />
