@@ -3,7 +3,7 @@ import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import weakImg from './img/weak.png';
 // import CSSTransistion from 'CSS'
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 
 function PopoverButton(props) {
 
